@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Generated Page</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SoQuin Global</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="global.css" rel="stylesheet"/>
+<style id="sections-styles">
+/* CSS for section section:Header */
+.header-section {
+    background-color: var(--color-white);
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    height: 39px;
+}
+.header-logo {
+    flex-shrink: 0;
+}
+.logo-image-container {
+    position: relative;
+    width: 103px;
+    height: 36px;
+}
+.header-menu {
+    display: flex;
+    gap: 46px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-text-dark);
+}
+.header-auth {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.login-link {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-text-dark);
+}
+.signup-btn {
+    font-size: 14px;
+    color: var(--color-white);
+    padding: 10px 20px;
+}
+@media (max-width: 1200px) {
+    .header-menu {
+        display: none; /* Hide menu on smaller screens, would need a hamburger menu implementation */
+    }
+    .header-nav {
+        justify-content: space-between;
+    }
+}
+@media (max-width: 768px) {
+    .login-link {
+        display: none;
+    }
+}
+
+/* CSS for section section:Hero */
+.hero-section {
+    position: relative;
+    height: 937px;
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+    overflow: hidden;
+}
+.hero-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(212deg, rgba(1, 72, 216, 0.5) 0%, rgba(0, 58, 174, 0.5) 46%, rgba(31, 86, 196, 0) 105%);
+    z-index: -1;
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 42px;
+    max-width: 967px;
+}
+.hero-title {
+    font-size: 90px;
+    font-weight: 500;
+    line-height: 1.15;
+    margin: 0;
+}
+.hero-subtitle {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 583px;
+}
+@media (max-width: 992px) {
+    .hero-section {
+        height: 700px;
+        text-align: center;
+        align-items: center;
+    }
+    .hero-content {
+        align-items: center;
+    }
+    .hero-title {
+        font-size: 60px;
+    }
+    .hero-subtitle {
+        font-size: 24px;
+    }
+}
+@media (max-width: 768px) {
+    .hero-section {
+        height: 600px;
+    }
+    .hero-title {
+        font-size: 48px;
+    }
+    .hero-subtitle {
+        font-size: 20px;
+    }
+    .hero-content {
+        gap: 30px;
+    }
+}
+
+/* CSS for section section:Intro */
+.intro-section {
+    padding: 80px 0;
+    background-color: var(--color-white);
+}
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.intro-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+.intro-title {
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 1.15;
+    color: var(--color-text-dark);
+    margin: 0;
+}
+.intro-subtitle {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-text-light);
+    margin: 0;
+    max-width: 781px;
+}
+.intro-cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+}
+.intro-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 240px;
+}
+.card-large {
+    width: 320px;
+}
+.card-image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.card-bg, .card-bg-large {
+    background-color: rgba(143, 148, 207, 0.29);
+    border: 1px solid rgba(98, 109, 238, 0.61);
+    border-radius: 1.5px;
+    box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.card-bg {
+    width: 240px;
+    height: 232px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.card-bg-large {
+    width: 320px;
+    height: 309px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.card-image {
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 2;
+    position: relative;
+}
+.card .card-image {
+    width: 208px;
+    height: 208px;
+}
+.card-large .card-image {
+    width: 277px;
+    height: 277px;
+}
+.card-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-primary);
+    margin: 0;
+}
+.slider-nav {
+    width: 54px;
+    height: 14px;
+}
+@media (max-width: 992px) {
+    .intro-title { font-size: 44px; }
+    .intro-subtitle { font-size: 24px; }
+    .intro-cards { flex-direction: column; }
+}
+
+/* CSS for section section:DigitalBanker */
+.digital-banker-section {
+    padding: 80px 0;
+    background-image: url('images/0a7d367db352f63370bea383ff59f39808be8646.png'), radial-gradient(173.07% 205.27% at 50% 50%, rgba(0, 2, 29, 0) 0%, rgba(2, 7, 77, 0.63) 100%);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    color: var(--color-white);
+}
+.digital-banker-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    text-align: center;
+}
+.digital-banker-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 676px;
+}
+.digital-banker-title {
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 1.15;
+    margin: 0;
+}
+.digital-banker-subtitle {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+}
+.digital-banker-logo {
+    position: relative;
+    width: 138px;
+    height: 138px;
+}
+.logo-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.digital-banker-buttons {
+    display: flex;
+    gap: 26px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .digital-banker-title { font-size: 44px; }
+    .digital-banker-subtitle { font-size: 24px; }
+    .digital-banker-content { gap: 40px; }
+}
+
+/* CSS for section section:GlobalVideo */
+.global-video-section {
+    padding: 80px 0;
+    background-color: var(--color-primary);
+}
+.video-container {
+    position: relative;
+    max-width: 827px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.video-thumbnail {
+    width: 100%;
+}
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    width: 138px;
+    height: 138px;
+}
+.play-button img {
+    width: 100%;
+    height: 100%;
+}
+@media (max-width: 768px) {
+    .play-button {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* CSS for section section:GlobalReserve */
+.feature-section {
+    padding: 80px 0;
+    background-color: var(--color-white);
+}
+.feature-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.feature-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    max-width: 573px;
+}
+.feature-title {
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 1.15;
+    color: var(--color-text-dark);
+    margin: 0;
+}
+.feature-description {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-text-medium);
+    margin: 0;
+}
+.feature-image-wrapper {
+    flex: 1;
+    max-width: 427px;
+}
+.feature-image {
+    width: 100%;
+    /* The design has a complex mask. For simplicity, we use the image as is.
+       A clip-path could be used for a more accurate representation:
+       clip-path: path('...'); */
+}
+@media (max-width: 992px) {
+    .feature-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .feature-text {
+        align-items: center;
+    }
+}
+
+/* CSS for section section:SoquinProperties */
+.feature-content-reverse {
+    display: flex;
+    align-items: center;
+    gap: 86px;
+}
+.feature-buttons {
+    display: flex;
+    gap: 26px;
+    flex-wrap: wrap;
+}
+@media (max-width: 992px) {
+    .feature-content-reverse {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 50px;
+    }
+    .feature-text {
+        align-items: center;
+    }
+    .feature-buttons {
+        justify-content: center;
+    }
+}
+
+/* CSS for section section:SoquinConnections */
+.connections-section {
+    padding: 80px 0;
+    background-color: var(--color-white);
+}
+.connections-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+}
+.connections-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 814px;
+}
+.connections-title {
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 1.15;
+    color: var(--color-text-medium);
+    margin: 0;
+}
+.connections-subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-text-medium);
+    margin: 0;
+}
+.connections-buttons {
+    display: flex;
+    gap: 21px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .connections-title { font-size: 44px; }
+}
+
+/* CSS for section section:Footer */
+.footer-section {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 80px 0;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+.footer-newsletter {
+    gap: 18px;
+    flex: 1;
+    min-width: 300px;
+}
+.footer-logo-container {
+    position: relative;
+    width: 103px;
+    height: 36px;
+}
+.footer-newsletter p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+}
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.newsletter-form label {
+    font-size: 14px;
+    font-weight: 500;
+}
+.newsletter-form input {
+    background-color: transparent;
+    border: 1px solid #eeeeee;
+    border-radius: 4px;
+    padding: 10px 12px;
+    color: var(--color-white);
+    font-size: 16px;
+}
+.newsletter-form button {
+    align-self: flex-start;
+}
+.footer-links {
+    gap: 22px;
+}
+.footer-links h4 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+}
+.footer-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.footer-links a {
+    font-size: 14px;
+    font-weight: 500;
+}
+.footer-download {
+    align-items: flex-start;
+}
+@media (max-width: 992px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-column {
+        align-items: center;
+    }
+    .newsletter-form button {
+        align-self: center;
+    }
+    .footer-download {
+        align-items: center;
+    }
+}
+  
+
+/* Patch: ensure round images always appear */
+.card-image { border-radius: 50%; object-fit: cover; width: 220px; height: 220px; }
+.intro-cards .card.card-large .card-image { width: 320px; height: 320px; }
+@media (max-width: 900px) {
+  .intro-cards .card.card-large .card-image { width: 260px; height: 260px; }
+  .card-image { width: 180px; height: 180px; }
+}
+
+
+/* --- Dots navigation --- */
+.slider-dots { display:flex; gap:10px; justify-content:center; align-items:center; margin-top: 16px; }
+.slider-dots .dot { width:10px; height:10px; border-radius:50%; border:1px solid var(--color-primary); background: transparent; cursor:pointer; }
+.slider-dots .dot.active { background: var(--color-primary); }
+/* Smooth size emphasis for the center card */
+.intro-cards { display:flex; gap:30px; align-items:flex-start; justify-content:center; }
+.intro-cards .card { transition: transform .25s ease, box-shadow .25s ease; }
+.intro-cards .card.card-large { transform: translateY(-10px); box-shadow: 0 6px 20px rgba(0,0,0,.08); }
+</style>
+<script defer="" src="global.js"></script>
+</head>
+<body>
+<header class="header-section">
+<div class="container">
+<nav class="header-nav">
+<a class="header-logo" href="#">
+<!--merged image-->
+<div class="logo-image-container">
+<img alt="logo part" src="images/2005_3573.svg" style="position: absolute; top: 0px; left: 0px; width: 36px; height: 36px;"/>
+<img alt="logo part" src="images/2005_3621.svg" style="position: absolute; top: 0px; left: 0px; width: 36px; height: 36px;"/>
+<img alt="logo part" src="images/2005_3870.svg" style="position: absolute; top: 0px; left: 0px; width: 36px; height: 36px;"/>
+<img alt="logo part" src="images/2005_3922.svg" style="position: absolute; top: 0px; left: 0px; width: 36px; height: 36px;"/>
+<img alt="logo part" src="images/2005_4185.svg" style="position: absolute; top: 7px; left: 42px; width: 39px; height: 9px;"/>
+<img alt="logo part" src="images/2005_4186.svg" style="position: absolute; top: 6px; left: 41px; width: 40px; height: 10px;"/>
+<img alt="logo part" src="images/2005_4191.svg" style="position: absolute; top: 20px; left: 42px; width: 47px; height: 9px;"/>
+<img alt="logo part" src="images/2005_4192.svg" style="position: absolute; top: 19px; left: 41px; width: 48px; height: 10px;"/>
+</div>
+</a>
+<ul class="header-menu">
+<li><a href="#intro">SoGlo</a></li>
+<li><a href="#digital-banker">Digital Banker</a></li>
+<li><a href="#soquin-properties">SoPro</a></li>
+<li><a href="#soquin-connections">SoQuln</a></li>
+<li><a href="#">SoQuin</a></li>
+<li><a href="#">About us</a></li>
+</ul>
+<div class="header-auth">
+<a class="login-link" href="#">Log in</a>
+<a class="btn btn-primary signup-btn" href="#">Sign up</a>
+</div>
+</nav>
+</div>
+</header>
+<section class="hero-section" id="hero">
+<img alt="Happy family in a field" class="hero-bg-image" src="images/54222a867dfff4116add0a696cd11f7f25d3790b.png"/>
+<div class="hero-overlay"></div>
+<div class="container">
+<div class="hero-content">
+<h1 class="hero-title">Embrace evolution for your money</h1>
+<p class="hero-subtitle">For those who want more from their money — there’s Wix. Sign up for free, in a tap.</p>
+<a class="btn btn-primary" href="#">Get the app</a>
+</div>
+</div>
+</section>
+<section class="intro-section" id="intro">
+<div class="container">
+<div class="intro-content">
+<div class="intro-text">
+<h2 class="intro-title">SoQuin Global</h2>
+<p class="intro-subtitle">Redefining Commerce, Currency, and Communication!</p>
+</div>
+<div class="intro-cards-container">
+<div class="intro-cards">
+<div class="card">
+<div class="card-image-wrapper">
+<div class="card-bg"></div>
+<img alt="Manage your money" class="card-image" src="images/3465021291456b1a477c4aa1ee76ae0935c4fa7d.png"/>
+</div>
+<p class="card-title">Manage your money</p>
+</div>
+<div class="card card-large">
+<div class="card-image-wrapper">
+<div class="card-bg-large"></div>
+<img alt="Own a home" class="card-image" src="images/33f70c056ce73d81facf46ad9538fbe05ca5ed8a.png"/>
+</div>
+<p class="card-title">Own a home</p>
+</div>
+<div class="card">
+<div class="card-image-wrapper">
+<div class="card-bg"></div>
+<img alt="Connections" class="card-image" src="images/0a7d367db352f63370bea383ff59f39808be8646.png"/>
+</div>
+<p class="card-title">Connections</p>
+</div>
+</div>
+<div aria-label="Slide navigation" class="slider-dots"><button aria-label="Show slide 1" class="dot active" data-rot="0" type="button"></button><button aria-label="Show slide 2" class="dot" data-rot="1" type="button"></button><button aria-label="Show slide 3" class="dot" data-rot="2" type="button"></button></div>
+</div>
+</div>
+</div>
+</section>
+<section class="digital-banker-section" id="digital-banker">
+<div class="container">
+<div class="digital-banker-content">
+<div class="digital-banker-text">
+<h2 class="digital-banker-title">Digital Banker</h2>
+<p class="digital-banker-subtitle">Your AI-powered private wealth manager that keeps you on track, pays bills with a tap, and maximizes your money inside.</p>
+</div>
+<div class="digital-banker-logo">
+<!--merged image-->
+<div class="logo-container">
+<img alt="logo part" src="images/2009_693.svg" style="position: absolute; top: 0px; left: 0px; width: 138px; height: 138px;"/>
+<img alt="logo part" src="images/2009_694.svg" style="position: absolute; top: 14px; left: 14px; width: 109px; height: 109px;"/>
+<img alt="logo part" src="images/2009_695.svg" style="position: absolute; top: 18px; left: 18px; width: 103px; height: 103px;"/>
+<img alt="logo part" src="images/2009_699.svg" style="position: absolute; top: 26px; left: 17px; width: 104px; height: 92px;"/>
+<img alt="logo part" src="images/2009_713.svg" style="position: absolute; top: 20px; left: 65px; width: 7px; height: 7px;"/>
+<img alt="logo part" src="images/2009_714.svg" style="position: absolute; top: 116px; left: 36px; width: 67px; height: 17px;"/>
+<img alt="logo part" src="images/2009_715.svg" style="position: absolute; top: 6px; left: 33px; width: 71px; height: 16px;"/>
+</div>
+</div>
+<div class="digital-banker-buttons">
+<a class="btn btn-secondary" href="#">See How It Works</a>
+<a class="btn btn-secondary" href="#">Try Digital Banker</a>
+</div>
+</div>
+</div>
+</section>
+<section class="global-video-section" id="global-video">
+<div class="container">
+<div class="video-container">
+<img alt="Video thumbnail of Earth from space" class="video-thumbnail" src="images/1212dce44dacebde6273351a7eb374813578fc5a.png"/>
+<button aria-label="Play video" class="play-button">
+<img alt="Play icon" src="images/2007_12551.svg"/>
+</button>
+</div>
+</div>
+</section>
+<section class="feature-section" id="global-reserve">
+<div class="container">
+<div class="feature-content">
+<div class="feature-text">
+<h2 class="feature-title">Global Reserve</h2>
+<p class="feature-description">Manages assets, currencies, and stability. Ensures legal adherence and transparency. Long-term strategies for financial sustainability. Rigorous processes for integrity and stakeholder insights.</p>
+<a class="btn btn-primary" href="#">Get the app</a>
+</div>
+<div class="feature-image-wrapper">
+<img alt="Business professionals in a meeting" class="feature-image" src="images/67ce405c48cd05df464417bf03a219298be9ace3.png"/>
+</div>
+</div>
+</div>
+</section>
+<section class="feature-section" id="soquin-properties">
+<div class="container">
+<div class="feature-content-reverse">
+<div class="feature-image-wrapper">
+<img alt="Modern house with a pool" class="feature-image" src="images/33f70c056ce73d81facf46ad9538fbe05ca5ed8a.png"/>
+</div>
+<div class="feature-text">
+<h2 class="feature-title">SoQuin Properties</h2>
+<p class="feature-description">Stable Solos currency linked to real estate. Constant, like the "Forever Stamp." Ensures stability in property transactions. Resists inflation, countering currency drawbacks.</p>
+<div class="feature-buttons">
+<a class="btn btn-primary" href="#">Get the app</a>
+<a class="btn btn-secondary" href="#">See How It Works</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="connections-section" id="soquin-connections">
+<div class="container">
+<div class="connections-content">
+<div class="connections-text">
+<h2 class="connections-title">SoQuin Connections</h2>
+<p class="connections-subtitle">Seamless integration of messaging and social media. Prioritizes robust security with end-to-end encryption. Fosters creativity, offering analytics and monetization opportunities</p>
+</div>
+<div class="video-container">
+<img alt="Video thumbnail of a waterfall" class="video-thumbnail" src="images/d939e6b116a2fb8712ff2b7e9c9de6eea1c20812.png"/>
+<button aria-label="Play video" class="play-button">
+<img alt="Play icon" src="images/70_676.svg"/>
+</button>
+</div>
+<div class="connections-buttons">
+<a class="btn btn-primary" href="#">Get the app</a>
+<a class="btn btn-secondary" href="#">See How It Works</a>
+</div>
+</div>
+</div>
+</section>
+<footer class="footer-section" id="footer">
+<div class="container">
+<div class="footer-content">
+<div class="footer-column footer-newsletter">
+<a class="footer-logo" href="#">
+<!--merged image-->
+<div class="footer-logo-container">
+<img alt="logo part" src="images/2005_5453.svg" style="position: absolute; top: 0px; left: 0px; width: 36px; height: 36px;"/>
+<img alt="logo part" src="images/2005_5501.svg" style="position: absolute; top: 0px; left: 0px; width: 36px; height: 36px;"/>
+<img alt="logo part" src="images/2005_5750.svg" style="position: absolute; top: 0px; left: 0px; width: 36px; height: 36px;"/>
+<img alt="logo part" src="images/2005_5802.svg" style="position: absolute; top: 0px; left: 0px; width: 36px; height: 36px;"/>
+<img alt="logo part" src="images/2005_6065.svg" style="position: absolute; top: 7px; left: 42px; width: 39px; height: 9px;"/>
+<img alt="logo part" src="images/2005_6066.svg" style="position: absolute; top: 6px; left: 41px; width: 40px; height: 10px;"/>
+<img alt="logo part" src="images/2005_6071.svg" style="position: absolute; top: 20px; left: 42px; width: 47px; height: 9px;"/>
+<img alt="logo part" src="images/2005_6072.svg" style="position: absolute; top: 19px; left: 41px; width: 48px; height: 10px;"/>
+</div>
+</a>
+<p>Sign up to receive our newsletter</p>
+<form class="newsletter-form">
+<label for="email">Email *</label>
+<input id="email" name="email" required="" type="email"/>
+<button class="btn btn-secondary" type="submit">Subscribe for Updates</button>
+</form>
+</div>
+<div class="footer-column footer-links">
+<h4>Solutions</h4>
+<ul>
+<li><a href="#">SoGlo</a></li>
+<li><a href="#">Digital Banker</a></li>
+<li><a href="#">SoPro</a></li>
+<li><a href="#">SoQuln</a></li>
+<li><a href="#">SoQuin</a></li>
+</ul>
+</div>
+<div class="footer-column footer-download">
+<a class="btn btn-secondary" href="#">download the application</a>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>
